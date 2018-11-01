@@ -16,8 +16,10 @@ exports.config = {
   onPrepare: function() {
     jasmine.getEnv().addReporter(
     new Jasmine2HtmlReporter({
-    savePath: 'test' ,
-    takeScreenshotsOnlyOnFailures: true
+    savePath: 'Results' ,
+    takeScreenshotsOnlyOnFailures: false,
+    fileNameSeparator: '_',
+    fileNameDateSuffix: true
    })
                                 );
   jasmine.getEnv().addReporter(
