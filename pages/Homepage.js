@@ -5,6 +5,7 @@ var Homepage = function() {
 
     this.get =  function() {
        browser.waitForAngularEnabled(false);
+      // browser.driver.manage().window().maximize();
        browser.get('https://www.freecrm.com/index.html');
     };
   

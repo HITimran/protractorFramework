@@ -3,15 +3,15 @@ var login=require('../pages/actions/StepsLogin.js');
 var homePage=require('../pages/Homepage.js');
 var using = require('jasmine-data-provider');
 
-describe('This is the suit desc', () => {
+describe('This Suit Should help', () => {
    using(UserInformation.UserInfo, function(data, description) {
 
-		it("Angular Info " + description, function() {
+		it("to login  " + description, function() {
             homePage.get();
-            // browser.debugger();
-            homePage.setName(data.user);
-            homePage.setPwd(data.credentials);
-            login.pressSubmit();
+            console.log();
+           expect(browser.getTitle()).toEqual('#1 Free CRM software in the cloud for sales and service');
+            login.enterCredentials(data.user,data.credentials);
+            login.pressSubmit();           
   })
 });
     
