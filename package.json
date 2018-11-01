@@ -1,0 +1,25 @@
+{
+  "name": "protractor-prj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testing",
+    "protractor"
+  ],
+  "author": "imran Abdul",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine-allure-reporter": "^1.0.2",
+    "jshint": "^2.9.6",
+    "protractor": "^5.4.1"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.7.0",
+    "jasmine-data-provider": "^2.2.0",
+    "jasmine-spec-reporter": "^4.2.1"
+  }
+}
